@@ -27,7 +27,13 @@ const LineChart = () => {
     },
   };
 
-  return <Line data={data} options={options} />;
+  
+  return (
+    <div style={{height: '300px', width: '550px'}}>
+      <Line data={data} options={options} />
+    </div>
+  );
 };
+
 
 export default LineChart;

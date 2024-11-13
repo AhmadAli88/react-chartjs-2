@@ -27,7 +27,13 @@ const BarChart = () => {
     },
   };
 
-  return <Bar data={data} options={options} height="200px" width="300px"/>;
+  return (
+    <div style={{height: '300px', width: '550px'}}>
+      <Bar data={data} options={options} />
+    </div>
+  );
+ 
+ 
 };
 
 export default BarChart;

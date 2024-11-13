@@ -27,7 +27,14 @@ const PieChart = () => {
     },
   };
 
-  return <Pie data={data} options={options} style={{width: '100px', height: '50px'}}/>;
+  // return <Pie data={data} options={options} style={{width: '100px', height: '50px'}}/>;
+
+  return (
+    <div style={{height: '300px', width: '550px'}}>
+      <Pie data={data} options={options} style={{width: '100px', height: '50px'}}/>
+    </div>
+  );
 };
+
 
 export default PieChart;
